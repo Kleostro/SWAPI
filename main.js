@@ -30,8 +30,7 @@ export const renderPage = (moduleName, apiUrl, css) => {
     Promise.all([moduleName, apiUrl, css].map(src => loadResource(src)))
         .then(([pageModule, data]) => {
             appContainer.innerHTML = '';
-            // pageModule.render(data)
-            appContainer.append(pageModule.render(data))
+            appContainer.append(pageModule.render(data));
         });
 };
 
