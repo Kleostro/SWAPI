@@ -1,6 +1,6 @@
 import { renderPage } from './main.js';
 
-export const render = async (data) => {
+export const render = (data) => {
 
     console.log(data)
     const films = data.results;
